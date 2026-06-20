@@ -114,10 +114,10 @@ GO
 ----------------
 
 --DROPT TABLES
-DROP TABLE studentVle 
-DROP TABLE studentAssessment
-DROP TABLE studentRegistration 
-DROP TABLE studentInfo
-DROP TABLE vle 
-DROP TABLE assessments 
-DROP TABLE courses 
+DROP TABLE IF EXISTS studentVle 
+DROP TABLE IF EXISTS studentAssessment
+DROP TABLE IF EXISTS studentRegistration 
+DROP TABLE IF EXISTS studentInfo
+DROP TABLE IF EXISTS vle 
+DROP TABLE IF EXISTS assessments 
+DROP TABLE IF EXISTS courses 
