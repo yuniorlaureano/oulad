@@ -44,6 +44,12 @@ class DataBaseOperation:
             cursor.execute(query, params)
             conn.commit()
 
+    def execute(self, query, params=None):
+        with connect(config.CON_STRING) as conn:
+            cursor = conn.cursor()
+            cursor.execute(query, params)
+            conn.commit()
+
     def bulk_copy(self, table_name: str, data: Iterable[tuple], columns: List[str], batch_size=10_000):
         """
         Insert data in bulk:
